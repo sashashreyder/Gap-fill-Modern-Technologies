@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap-fill | Modern Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <video id="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="card">
+    <h1>Gap-fill: Modern Technologies</h1>
+
+    <p class="instructions">
+      Fill in the missing tech-related words. Hover <strong>?</strong> for a hint, then click
+      <em>Check&nbsp;your&nbsp;score</em>.
+    </p>
+    
+    <p>
+      In today’s world, people often
+      <span class="blank" data-answer="doomscroll">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">to obsessively read bad news online</span>
+      </span>
+      late at night. Social media can
+      <span class="blank" data-answer="erode">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">to weaken gradually</span>
+      </span>
+      our focus, and constant alerts
+      <span class="blank" data-answer="distract">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">to divert attention away</span>
+      </span>
+      from real tasks. It’s important to take a
+      <span class="blank" data-answer="digital detox">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">tech break</span>
+      </span>
+      and spend time offline.
+    </p>
+
+    <p>
+      New devices are becoming more
+      <span class="blank" data-answer="user-friendly">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">intuitive design</span>
+      </span>
+      and
+      <span class="blank" data-answer="hands-free">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">no physical input needed</span>
+      </span>,
+      while apps are
+      <span class="blank" data-answer="optimized">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">improved for efficiency</span>
+      </span>
+      to run smoothly. Many workers now
+      <span class="blank" data-answer="upskill">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">learn new tech skills</span>
+      </span>
+      or work as
+      <span class="blank" data-answer="digital nomads">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">remote workers who travel</span>
+      </span>,
+      connected by cloud services.
+    </p>
+
+    <button id="check">Check your score</button>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>🤖 Your Results</h2>
+      <p id="modal-text"></p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
