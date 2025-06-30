@@ -1,3 +1,4 @@
+/* ---------- BASE ---------- */
 *,
 *::before,
 *::after {
@@ -29,43 +30,51 @@ body {
 }
 
 @keyframes bgMove {
-  0% { background-position: 0 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0 50%; }
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
+/* ---------- CARD ---------- */
 .card {
   max-width: 780px;
   width: 100%;
   background: var(--cardBg);
   backdrop-filter: blur(8px);
-  padding: 2.2rem 3rem;
+  padding: 3rem 4rem;
   border-radius: var(--radius);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
 }
 
 h1 {
-  font-size: clamp(1.3rem, 2.8vw, 1.6rem);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
   text-align: center;
-  margin: 0 0 1rem;
+  margin: 0 0 1.2rem;
 }
 
 .instructions {
-  margin: 0 0 1.2rem;
-  font-size: 0.9rem;
+  margin: 0 0 1.6rem;
+  font-size: 0.95rem;
   color: #444;
 }
 
+/* ---------- GAPS ---------- */
 p {
-  line-height: 1.65;
-  margin: 1rem 0;
-  font-size: 0.95rem;
+  line-height: 1.8;
+  margin: 1.2rem 0;
+  font-size: 1rem;
 }
 
 .blank {
   display: inline-block;
   position: relative;
-  margin: 0 0.35rem 0.55rem;
+  margin: 8px 0;
   vertical-align: middle;
 }
 
@@ -97,6 +106,7 @@ p {
   animation: shake 0.3s ease-in-out;
 }
 
+/* ---------- TOOLTIP ---------- */
 .tooltip {
   cursor: pointer;
   color: var(--brand);
@@ -141,11 +151,12 @@ p {
   transform: translate(-50%, -6px);
 }
 
+/* ---------- BUTTON ---------- */
 button {
   display: block;
-  margin: 2rem auto 0;
-  padding: 0.75rem 2.2rem;
-  font-size: 0.95rem;
+  margin: 2.4rem auto 0;
+  padding: 0.9rem 2.6rem;
+  font-size: 1rem;
   font-weight: 600;
   border: none;
   border-radius: 40px;
@@ -160,6 +171,7 @@ button:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
+/* ---------- SCORE ---------- */
 #score {
   text-align: center;
   font-weight: 600;
@@ -167,26 +179,14 @@ button:hover {
   font-size: 1.1rem;
 }
 
+/* ---------- MEDIA ---------- */
 @media (max-width: 900px) {
   .card {
     padding: 2.2rem;
   }
 }
 
-@media (max-width: 600px) {
-  body {
-    padding: 1.2rem;
-  }
-
-  .card {
-    padding: 1.8rem;
-  }
-
-  .blank input {
-    width: 100%;
-  }
-}
-
+/* ---------- VIDEO BG ---------- */
 #bg-video {
   position: fixed;
   top: 0;
@@ -199,6 +199,7 @@ button:hover {
   pointer-events: none;
 }
 
+/* ---------- MODAL ---------- */
 .modal {
   position: fixed;
   inset: 0;
@@ -243,6 +244,7 @@ button:hover {
   background: #4f46e5;
 }
 
+/* ---------- ANIMATIONS ---------- */
 @keyframes popUp {
   from {
     transform: scale(0.85);
@@ -256,9 +258,20 @@ button:hover {
 }
 
 @keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-4px); }
-  50% { transform: translateX(4px); }
-  75% { transform: translateX(-4px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
+
